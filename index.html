@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Material Design for Bootstrap</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Google Fonts Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+    />
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    <!-- <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    /> -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    <link href="css/vivify.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container justify-content-between">
+        <a id="nav-link-special" class="navbar-brand hov-yellow-new" href="#"
+          ><i class="me-2"
+            ><img
+              style="width: 40px; height: 40px"
+              src="img/hairstyle.png"
+              alt=""
+          /></i>
+          <h5 class="mb-0 fs-6">Man Cave Barbershop</h5></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-mdb-toggle="collapse"
+          data-mdb-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarTogglerDemo02"
+        >
+          <ul id="nav-links" class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active me-2 underl-gold pb-0 hov-yellow-new"
+                aria-current="page"
+                href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active me-2 underl-gold pb-0 hov-yellow-new"
+                aria-current="page"
+                href="#"
+                >About Us</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active me-2 underl-gold pb-0 hov-yellow-new"
+                aria-current="page"
+                href="#"
+                >Contact</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active me-2 underl-gold pb-0 hov-yellow-new"
+                aria-current="page"
+                href="#"
+                >Galery</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active me-2 underl-gold pb-0 hov-yellow-new"
+                aria-current="page"
+                href="#"
+                >Services</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active me-2 underl-gold pb-0 hov-yellow-new"
+                aria-current="page"
+                href="#"
+                >Prices</a
+              >
+            </li>
+            <li id="nav-btn" class="nav-item">
+              <button
+                type="button"
+                class="btn btn-outline-warning btn-shadow"
+                data-mdb-ripple-color="dark"
+              >
+                Book Now
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Carousel wrapper -->
+    <div
+      id="carouselVideoExample"
+      class="carousel slide carousel-fade mb-10"
+      data-mdb-ride="carousel"
+      data-mdb-pause="false"
+    >
+      <!-- Indicators -->
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-mdb-target="#carouselVideoExample"
+          data-mdb-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-mdb-target="#carouselVideoExample"
+          data-mdb-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-mdb-target="#carouselVideoExample"
+          data-mdb-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+
+      <!-- Inner -->
+      <div class="carousel-inner">
+        <!-- Single item -->
+        <div class="carousel-item active" data-mdb-interval="1000000">
+          <video class="img-fluid ratio" autoplay loop muted>
+            <source src="./video/Barber - 48968.mp4" type="video/mp4" />
+          </video>
+          <div class="mask" style="background-color: rgba(0, 0, 0, 0.7)">
+            <div class="container" style="height: inherit">
+              <div
+                class="row justify-content-lg-center justify-content-md-center justify-content-center align-items-center text-center align-content-center"
+                style="height: inherit"
+              >
+                <div
+                  class="d-flex flex-column justify-content-center align-items-center align-content-center text-center col-lg-12 col-md-10 col-sm-10 col-10"
+                >
+                  <h1
+                    data-aos="fade-right"
+                    class="text-white mb-0"
+                    style="font-size: 4vw"
+                  >
+                    You look great,we make it <br />obvious
+                  </h1>
+                  <p
+                    class="text-white-50 mt-3 mb-lg-5 mb-md-4 mb-sm-2 mb-2"
+                    style="font-size: 1.5vw"
+                  >
+                    CLASSIC STYLE NEVER GOES OUT OF STYLE!
+                  </p>
+                  <button
+                    id="btn-title"
+                    type="button"
+                    class="btn btn-warning px-lg-5 px-md-2 px-sm-0 px-0 w-25"
+                  >
+                    Book Your Place
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Single item -->
+        <div class="carousel-item">
+          <video class="img-fluid" autoplay loop muted>
+            <source
+              src="https://mdbcdn.b-cdn.net/img/video/forest.mp4"
+              type="video/mp4"
+            />
+          </video>
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+
+        <!-- Single item -->
+        <div class="carousel-item">
+          <video class="img-fluid" autoplay loop muted>
+            <source
+              src="https://mdbcdn.b-cdn.net/img/video/Agua-natural.mp4"
+              type="video/mp4"
+            />
+          </video>
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>
+              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- title cards -->
+    <div class="text-center">
+      <h2 data-aos="fade-up" data-aos-duration="600" class="mb-5">
+        Chose your Specialist
+      </h2>
+      <p
+        data-aos="fade-up"
+        data-aos-duration="800"
+        class="col-xxl-4 col-xl-6 col-lg-6 col-md-6 col-sm-10 mx-auto mb-10"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus
+        temporibus molestias dicta repudiandae quo veniam consequatur quos alias
+        consequatur quos alias
+      </p>
+    </div>
+    <!-- cards -->
+    <div class="container">
+      <div class="row justify-content-center mb-10">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="800"
+          class="col-md-4"
+          style="max-width: 333px"
+        >
+          <div class="card card-profile hov-up">
+            <div class="card-avatar">
+              <a href="#"
+                ><img class="img h-auto w-100" src="img/1.png" alt=""
+              /></a>
+            </div>
+            <div class="table mb-0">
+              <h4>Manager Manager Man</h4>
+              <h6>Helloooooo</h6>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Laudantium, a.
+                </li>
+                <li class="list-group-item">Lorem, Lorem, Lorem</li>
+                <li class="list-group-item py-3">
+                  <i class="fa-solid fa-star c-yellow fa-lg"></i
+                  ><i class="fa-solid fa-star c-yellow fa-lg px-3"></i
+                  ><i class="fa-solid fa-star c-yellow fa-lg"></i>
+                </li>
+              </ul>
+            </div>
+            <button
+              type="button"
+              class="btn btn-outline-warning mb-4"
+              data-mdb-ripple-color="dark"
+            >
+              Book Now
+            </button>
+          </div>
+        </div>
+        <div
+          data-aos="fade-up"
+          data-aos-duration="800"
+          class="col-md-4 mx-5"
+          style="max-width: 333px"
+        >
+          <div class="card card-profile hov-up">
+            <div class="card-avatar">
+              <a href="#"
+                ><img class="img h-auto w-100" src="img/2.png" alt=""
+              /></a>
+            </div>
+            <div class="table mb-0">
+              <h4>Manager Manager Man</h4>
+              <h6>Helloooooo</h6>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Laudantium, a.
+                </li>
+                <li class="list-group-item">Lorem, Lorem, Lorem</li>
+                <li class="list-group-item py-3">
+                  <i class="fa-solid fa-star c-yellow fa-lg"></i
+                  ><i class="fa-solid fa-star c-yellow fa-lg px-3"></i
+                  ><i class="fa-solid fa-star c-yellow fa-lg"></i>
+                </li>
+              </ul>
+            </div>
+            <button
+              type="button"
+              class="btn btn-outline-warning mb-4"
+              data-mdb-ripple-color="dark"
+            >
+              Book Now
+            </button>
+          </div>
+        </div>
+        <div
+          data-aos="fade-up"
+          data-aos-duration="800"
+          class="col-md-4"
+          style="max-width: 333px"
+        >
+          <div class="card card-profile hov-up">
+            <div class="card-avatar">
+              <a href="#"
+                ><img class="img h-auto w-100" src="img/3.png" alt=""
+              /></a>
+            </div>
+            <div class="table mb-0">
+              <h4>Manager Manager Man</h4>
+              <h6>Helloooooo</h6>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Laudantium, a.
+                </li>
+                <li class="list-group-item">Lorem, Lorem, Lorem</li>
+                <li class="list-group-item py-3">
+                  <i class="fa-solid fa-star c-yellow fa-lg"></i
+                  ><i class="fa-solid fa-star c-yellow fa-lg px-3"></i
+                  ><i class="fa-solid fa-star c-yellow fa-lg"></i>
+                </li>
+              </ul>
+            </div>
+            <button
+              type="button"
+              class="btn btn-outline-warning mb-4"
+              data-mdb-ripple-color="dark"
+            >
+              Book Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Barbershop Title -->
+    <div class="text-center">
+      <h2 data-aos="fade-up" data-aos-duration="600" class="mb-5">
+        Barber Shop And Hairdresser
+      </h2>
+    </div>
+    <!-- Barbershop Place -->
+    <div class="container marketing-specialist my-new">
+      <div class="row mx-md-5 mx-sm-2 align-items-center">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="800"
+          class="col-md-6 px-5 mb-sm-5 mb-5 mb-md-0"
+        >
+          <h3>
+            <span class="icon-barber"
+              ><img
+                style="width: 80px; height: 80px"
+                src="img/image_processing20210902-30363-1dzrii7.gif"
+                alt=""
+            /></span>
+            Johanatan Doe
+            <span class="icon-barber"
+              ><img
+                style="width: 80px; height: 80px"
+                src="img/image_processing20210902-30363-1dzrii7.gif"
+                alt=""
+            /></span>
+          </h3>
+          <p>
+            MEN'S came into being thanks to the voices of many <br />
+            men who no longer found themselves in this new <br />
+            place that was 100% masculine
+          </p>
+
+          <a href="#" class="link-arrow">Learn More</a>
+        </div>
+        <div class="col-md-6 d-flex justify-content-center">
+          <img
+            data-aos="zoom-in"
+            data-aos-duration="800"
+            src="./img/5new.png"
+            width="100%"
+            alt=""
+            style="min-width: 270px; min-height: 202px; max-width: 470px"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- Barbershop Inside -->
+    <div class="container marketing-specialist my-new">
+      <div class="row mx-md-5 mx-sm-2 align-items-center">
+        <div class="col-md-6 d-flex justify-content-center">
+          <img
+            data-aos="zoom-in"
+            data-aos-duration="800"
+            class=""
+            src="./img/6new.png"
+            width="100%"
+            alt=""
+            style="min-width: 270px; min-height: 202px; max-width: 470px"
+          />
+        </div>
+        <div
+          data-aos="fade-up"
+          data-aos-duration="800"
+          class="col-md-6 px-5 mb-sm-5 mb-5 mb-md-0 text-end mt-3"
+        >
+          <h3>
+            Johanatan Doe
+            <span
+              ><img
+                style="width: 40px; height: 40px"
+                src="img/icons8-barbershop.gif"
+                alt=""
+            /></span>
+          </h3>
+          <p>
+            MEN'S came into being thanks to the voices of many <br />
+            men who no longer found themselves in this new <br />
+            place that was 100% masculine
+          </p>
+
+          <a href="#" class="link-arrow">Learn More</a>
+        </div>
+      </div>
+    </div>
+    <!-- Product -->
+    <div class="container-fluid bg-light-new">
+      <!-- Title Product -->
+
+      <!-- product Banner -->
+      <div class="container pb-5 pt-3">
+        <div class="text-center">
+          <h2 data-aos="fade-up" data-aos-duration="600" class="mt-3 mb-6">
+            Only Premium Products
+          </h2>
+        </div>
+        <div class="row">
+          <div
+            data-aos="fade-right"
+            data-aos-duration="800"
+            class="col-md-4 d-flex flex-column justify-content-center align-items-start"
+          >
+            <h3 class="mb-4">Description</h3>
+            <p>
+              Whether we are talking about styling, beard care or hair care, in
+              our barber shop we only use internationally renowned brands, which
+              have distinguished themselves both by the high quality of their
+              products and the mix of ingredients in their composition, without
+              parabens, phthalates or other harmful synthetics.
+            </p>
+            <button
+              type="button"
+              class="btn btn-outline-warning mb-4 mt-4 vivify pulsate infinite duration-2000"
+              data-mdb-ripple-color="dark"
+            >
+              Buy Now
+            </button>
+          </div>
+          <div
+            class="col-md-4 d-flex justify-content-center align-items-center hov-scale"
+          >
+            <img
+              data-aos="zoom-in"
+              data-aos-duration="900"
+              style="max-width: 300px; max-height: 300px"
+              src="img/7.png"
+              alt=""
+            />
+          </div>
+          <div
+            class="col-md-4 d-flex justify-content-center align-items-center"
+          >
+            <div
+              data-aos="fade-right"
+              data-aos-duration="800"
+              class="card bg-light-new d-flex justify-content-center align-items-center py-3 mt-4"
+              style="width: 18rem"
+            >
+              <ul class="list-group list-group-flush w-fit">
+                <li class="list-group-item bg-light-new">Cras justo odio</li>
+                <li class="list-group-item bg-light-new">
+                  Dapibus ac facilisis in
+                </li>
+                <li class="list-group-item bg-light-new">Vestibulum at eros</li>
+                <li class="list-group-item bg-light-new">Cras justo odio</li>
+                <li class="list-group-item bg-light-new">
+                  Dapibus ac facilisis in
+                </li>
+                <li class="list-group-item bg-light-new">Vestibulum at eros</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Advanteges -->
+    <div class="container best-features my-5">
+      <div class="text-center">
+        <h2 data-aos="fade-up" data-aos-duration="600" class="mt-3 mb-6">
+          Advantages of working with us
+        </h2>
+      </div>
+      <div class="row">
+        <div class="col-md-4 text-center mb-5">
+          <img
+            class="mb-3"
+            style="max-width: 50px; max-height: 50px"
+            src="img/clock.gif"
+            alt=""
+          />
+          <h6 class="mb-3">Time</h6>
+          <p style="font-size: 12px">
+            Lorem ipsum dolor sit amet consectetur adipisicing <br />
+            Lorem ipsum dolor sit amet consectetur
+          </p>
+        </div>
+        <div class="col-md-4 text-center mb-5">
+          <img
+            class="mb-3"
+            style="max-width: 50px; max-height: 50px"
+            src="img/calendar.gif"
+            alt=""
+          />
+          <h6 class="mb-3">Reservation</h6>
+          <p style="font-size: 12px">
+            Lorem ipsum dolor sit amet consectetur adipisicing <br />
+            Lorem ipsum dolor sit amet consectetur
+          </p>
+        </div>
+        <div class="col-md-4 text-center mb-5">
+          <img
+            class="mb-3"
+            style="max-width: 50px; max-height: 50px"
+            src="img/phone.gif"
+            alt=""
+          />
+          <h6 class="mb-3">Call Booking</h6>
+          <p style="font-size: 12px">
+            Lorem ipsum dolor sit amet consectetur adipisicing <br />
+            Lorem ipsum dolor sit amet consectetur
+          </p>
+        </div>
+        <div class="col-md-4 text-center mb-5">
+          <img
+            class="mb-3"
+            style="max-width: 50px; max-height: 50px"
+            src="img/diploma.gif"
+            alt=""
+          />
+          <h6 class="mb-3">Certificate</h6>
+          <p style="font-size: 12px">
+            Lorem ipsum dolor sit amet consectetur adipisicing <br />
+            Lorem ipsum dolor sit amet consectetur
+          </p>
+        </div>
+        <div class="col-md-4 text-center mb-5">
+          <img
+            class="mb-3"
+            style="max-width: 50px; max-height: 50px"
+            src="img/award.gif"
+            alt=""
+          />
+          <h6 class="mb-3">Awards</h6>
+          <p style="font-size: 12px">
+            Lorem ipsum dolor sit amet consectetur adipisicing <br />
+            Lorem ipsum dolor sit amet consectetur
+          </p>
+        </div>
+        <div class="col-md-4 text-center mb-5">
+          <img
+            class="mb-3"
+            style="max-width: 50px; max-height: 50px"
+            src="img/shopping.gif"
+            alt=""
+          />
+          <h6 class="mb-3">Quality Products</h6>
+          <p style="font-size: 12px">
+            Lorem ipsum dolor sit amet consectetur adipisicing <br />
+            Lorem ipsum dolor sit amet consectetur
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- testimonial -->
+
+    <!-- footer baneer -->
+    <div class="bg-dark-new">
+      <div class="container my-new">
+        <div class="row align-items-center my-5 py-4" style="height: 200px">
+          <div class="col-md-12 col-sm-12 text-white mx-auto text-center">
+            <h2>
+              Discover the atmosphere of a place dedicated exclusively to men
+            </h2>
+          </div>
+          <div class="d-flex col-md-12 col-sm-12 justify-content-center">
+            <button
+              style="min-width: 170px"
+              type="button"
+              class="btn btn-outline-light h-25 w-25 rounded-pill"
+            >
+              Book Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Preturi -->
+    <div class="container mb-10">
+      <div class="text-center">
+        <h2 data-aos="fade-down" data-aos-duration="800" class="mt-3 mb-6">
+          Services & Prices
+        </h2>
+      </div>
+      <div class="row justify-content-evenly">
+        <div
+          data-aos="fade-down"
+          data-aos-duration="1000"
+          class="card card-price col-md-3 d-flex flex-column justify-content-center align-items-center text-center mb-5"
+          style="max-width: 250px"
+        >
+          <img
+            class="my-4"
+            style="height: 100px; width: 100px"
+            src="img/scissors-and-comb (1).png"
+            alt=""
+          />
+          <div class="card-body">
+            <h5 class="card-title">Premium Haircut</h5>
+            <span class="mb-4">60 de lei</span>
+            <p class="card-text">
+              Lorem, ipsum dolor sit amet <br />
+              consectetur adipisicing elit. Animi, temporibus!
+            </p>
+          </div>
+          <button
+            type="button"
+            class="btn btn-outline-warning mb-4 mt-4"
+            data-mdb-ripple-color="dark"
+          >
+            Select
+          </button>
+        </div>
+
+        <div
+          data-aos="fade-down"
+          data-aos-duration="1000"
+          class="card card-price col-md-3 d-flex flex-column justify-content-center align-items-center text-center mb-5"
+          style="max-width: 250px"
+        >
+          <img
+            class="my-4"
+            style="height: 100px; width: 100px"
+            src="img/star (1).png"
+            alt=""
+          />
+          <div class="card-body">
+            <h5 class="card-title">Superior Experience</h5>
+            <span class="mb-4">90 de lei</span>
+            <p class="card-text">
+              Lorem, ipsum dolor sit amet <br />
+              consectetur adipisicing elit. Animi, temporibus!
+            </p>
+          </div>
+          <button
+            type="button"
+            class="btn btn-outline-warning mb-4 mt-4"
+            data-mdb-ripple-color="dark"
+          >
+            Select
+          </button>
+        </div>
+        <div
+          data-aos="fade-down"
+          data-aos-duration="1000"
+          class="card card-price col-md-3 d-flex flex-column justify-content-center align-items-center text-center mb-5"
+          style="max-width: 250px"
+        >
+          <img
+            class="my-4"
+            style="height: 100px; width: 100px"
+            src="img/diamond (1).png"
+            alt=""
+          />
+          <div class="card-body">
+            <h5 class="card-title">Ultimate Experience</h5>
+            <span class="mb-4">100 de lei</span>
+            <p class="card-text">
+              Lorem, ipsum dolor sit amet <br />
+              consectetur adipisicing elit. Animi, temporibus!
+            </p>
+          </div>
+          <button
+            type="button"
+            class="btn btn-outline-warning mb-4 mt-4"
+            data-mdb-ripple-color="dark"
+          >
+            Select
+          </button>
+        </div>
+        <div
+          data-aos="fade-down"
+          data-aos-duration="1000"
+          class="card card-price col-md-3 d-flex flex-column justify-content-center align-items-center text-center mb-5"
+          style="max-width: 250px"
+        >
+          <img
+            class="my-4"
+            style="height: 100px; width: 100px"
+            src="img/beard (1).png"
+            alt=""
+          />
+          <div class="card-body">
+            <h5 class="card-title">Executive Beard</h5>
+            <span class="mb-4">50 de lei</span>
+            <p class="card-text">
+              Lorem, ipsum dolor sit amet <br />
+              consectetur adipisicing elit. Animi, temporibus!
+            </p>
+          </div>
+          <button
+            type="button"
+            class="btn btn-outline-warning mb-4 mt-4"
+            data-mdb-ripple-color="dark"
+          >
+            Select
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- FOOOOOOTER -->
+    <div class="bg-dark-new pt-5 pb-3">
+      <div class="text-center">
+        <h2 class="mb-6 bg-grey-new-c">Contact Us</h2>
+      </div>
+      <div class="container pb-5">
+        <div class="row justify-content-between align-items-center mx-2">
+          <div class="col-md-6">
+            <div class="mapouter">
+              <div class="gmap_canvas">
+                <iframe
+                  width="100%"
+                  height="500"
+                  id="gmap_canvas"
+                  src="https://maps.google.com/maps?q=bucuresti&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                  frameborder="0"
+                  scrolling="no"
+                  marginheight="0"
+                  marginwidth="0"
+                ></iframe
+                ><a href="https://123movies-to.org">123 movies</a><br /><style>
+                  .mapouter {
+                    position: relative;
+                    text-align: right;
+                    height: 500px;
+                    width: 100%;
+                  }</style
+                ><a href="https://www.embedgooglemap.net">embedgooglemap.net</a
+                ><style>
+                  .gmap_canvas {
+                    overflow: hidden;
+                    background: none !important;
+                    height: 500px;
+                    width: 100%;
+                  }
+                </style>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-md-5 d-flex flex-column justify-content-center align-items-stretch mt-md-0 mt-sm-5 mt-5 form"
+          >
+            <form>
+              <div class="form-title w-fit m-auto">
+                <h4 class="border-bottom border-dark mx-auto mb-5 pb-2">
+                  Formular Contact
+                </h4>
+              </div>
+              <!-- Name input -->
+              <div class="form-outline mb-4">
+                <input type="text" id="form4Example1" class="form-control" />
+                <label class="form-label" for="form4Example1">Name</label>
+              </div>
+
+              <!-- Email input -->
+              <div class="form-outline mb-4">
+                <input type="email" id="form4Example2" class="form-control" />
+                <label class="form-label" for="form4Example2"
+                  >Email address</label
+                >
+              </div>
+
+              <!-- Message input -->
+              <div class="form-outline mb-4">
+                <textarea
+                  class="form-control"
+                  id="form4Example3"
+                  rows="4"
+                ></textarea>
+                <label class="form-label" for="form4Example3">Message</label>
+              </div>
+
+              <!-- Checkbox -->
+              <div class="form-check d-flex justify-content-center mb-4">
+                <input
+                  class="form-check-input me-2"
+                  type="checkbox"
+                  value=""
+                  id="form4Example4"
+                  checked
+                />
+                <label class="form-check-label" for="form4Example4">
+                  Send me a copy of this message
+                </label>
+              </div>
+
+              <!-- Submit button -->
+              <div class="d-flex justify-content-center align-items-center">
+                <button
+                  style="min-width: 210px"
+                  type="submit"
+                  class="btn btn-primary mb-4"
+                >
+                  Send
+                </button>
+              </div>
+              <!-- Register buttons -->
+              <div class="text-center">
+                <p>or sign up with:</p>
+                <button type="button" class="btn btn-primary btn-floating mx-1">
+                  <i class="fab fa-facebook-f"></i>
+                </button>
+
+                <button type="button" class="btn btn-primary btn-floating mx-1">
+                  <i class="fab fa-google"></i>
+                </button>
+
+                <button type="button" class="btn btn-primary btn-floating mx-1">
+                  <i class="fab fa-twitter"></i>
+                </button>
+
+                <button type="button" class="btn btn-primary btn-floating mx-1">
+                  <i class="fab fa-github"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <hr class="bg-grey-new" />
+        <div class="row text-center my-4 bg-grey-new-c">
+          <p>Copyright@Parag 2016, All Rights Reserved</p>
+        </div>
+      </div>
+    </div>
+    <!-- Carousel wrapper -->
+    <!-- MDB -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- Custom scripts -->
+    <script type="text/javascript"></script>
+  </body>
+</html>

@@ -1,0 +1,262 @@
+.banner-image {
+    background-image: url("http://wallpaperaccess.com/full/533108.jpg");
+    background-size: cover;
+  }
+  .card-awards {
+    transition: transform .3s; 
+  }
+  .card-awards:hover {
+transform: scale(1.06); 
+ }
+.bg-dark {
+  --bs-bg-opacity: 0.5;
+}
+
+.hov-warning {
+  color: #333;
+  transition: 0.2s;
+ 
+}
+.hov-warning:hover {
+  color: #ffc107;
+  display: block;
+
+}
+.td-none {
+  text-decoration: none;
+}
+.underl-gold {
+  display: inline-block;
+  text-decoration: none;
+  position: relative;
+
+}
+.underl-gold::after {
+content: "";
+width: 100%;
+height: 1px;
+bottom: -3px;
+background-color: gold;
+border-radius: 4px;
+position: absolute;
+left: 0;
+right: 0;
+transform: scaleX(0);
+transform-origin: left;
+transition: transform .25s ease;
+}
+.underl-gold:hover::after {
+  transform: scaleX(1);
+}
+.w-fit {
+  width: fit-content;
+}
+.overlay {
+  transition: all .3s ease;
+  opacity: 0;
+}
+.box-carusel:hover .overlay {
+  opacity: 0.8;
+  }
+.overlayBottom {
+  height: 0;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  background-color: #ffc107;
+}
+.box-carusel:hover .overlayBottom {
+width: 100%;
+height: 20%;
+
+}
+.hov-scale {
+  transition: transform .3s;
+}
+.how-scale:hover {
+  transform: scale(1.3);
+}
+.text {
+  color: white;
+  position: absolute;
+  top: 26%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 30px;
+}
+.hov-scale {
+  transition: transform .3s; 
+}
+.hov-scale:hover {
+    transform: scale(1.2);
+  }
+
+ #nav-btn .btn-outline-warning {
+    color: #ffc107;
+    border-color: #ffc107;
+}
+#nav-btn>.btn-outline-warning:hover {
+    color: #ffc107;
+    border-color: #ffc107;
+    box-shadow: 0 0 5px 5px #ffc107;
+  }
+  
+.hov-zoom {
+  transition: transform .3s;
+}
+.hov-zoom:hover {
+  transform: scale(1.05);
+}
+.hov-up {
+  transition: transform .4s;
+}
+
+.hov-up:hover {
+  transform: translateY(-30px);
+}
+.card {
+  transition: transform .3s;
+border: 1px solid #252422;}
+.card:hover {
+  border: 1px solid #ffc107;
+}
+.card-price {
+translate: transform .3s;
+}
+.card-price:hover {
+  box-shadow: 0 0 35px 0.1px #ffc107;
+}
+.my-new {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.mt-new {
+margin-top: 100px;
+}
+.mb-new {
+  margin-bottom: 100px;
+}
+.card-avatar {
+  max-width: 130px;
+  max-height: 130px;
+  margin: -50px auto 0;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 16px 38px -12px rgb(0 0 0 / 56%), 0 4px 25px 0px rgb(0 0 0 / 12%), 0 8px 10px -5px rgb(0 0 0 / 20%);
+}
+.card {
+  display: inline-block;
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+    border-radius: 6px;
+    color: rgba(0, 0, 0, 0.87);
+    background: #fff;
+    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 20%), 0 1px 5px 0 rgb(0 0 0 / 12%);
+}
+.card-profile {
+  margin-top: 30px;
+  text-align: center;
+}
+.table {
+  padding: 15px 30px;
+}
+.table>:not(:first-child) {
+  border-top: 0;
+}
+.table>:not(caption)>*>* {
+  padding: 0;
+}
+.c-yellow {
+  color: #ffc107;
+}
+.bg-light-new {
+background-color: #FFFCF2;
+}
+.bg-light-new-c {
+color: #FFFCF2;
+}
+.bg-dark-new {
+  background-color: #252422;
+}
+.bg-grey-new {
+background-color: #CCC5B9;
+}
+.bg-grey-new-c {
+color: #CCC5B9;
+}
+.bg-darkgrey-new {
+background-color: #403D39;
+}
+
+.bg-accent-new {
+color: #EB5E28;
+}
+.bg-yellow-new {
+  color: #FED35B;
+}
+.bg-blue-new {
+  color:  #467082;
+}
+a {
+  text-decoration: none;
+}
+#nav-links .hov-yellow-new {
+  color: #fff;
+}
+#nav-links .hov-yellow-new:hover{
+color: #ffc107;
+}
+
+.link-arrow {
+  color: #EB5E28;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: bold;
+}
+.link-arrow::after {
+content: "-->";
+margin-left: 5px;
+transition: margin 0.15s;
+}
+.link-arrow:hover::after {
+  margin-left: 10px;
+}
+@media screen and (min-width: 1024px) {
+  .link-arrow {
+      font-size: 15px;
+  }
+}
+.btn-primary {
+  color: #fff;
+  background-color: #CCC5B9;
+}
+.btn-primary.focus, .btn-primary:focus, .btn-primary:hover {
+  color: #403D39;
+  background-color: #FFFCF2;
+}
+
+
+/* nou */
+@media (max-width: 500px) { 
+  .navbar{
+      display:none;
+  }
+}
+@media (max-width: 700px) { 
+ #btn-title {
+   height: 26px;
+   font-size: 6px;
+ }
+}
+@media (max-width: 1200px) { 
+  .icon-barber {
+    display: none;
+  }
+ }
+ .form {
+  border: 1px solid white;
+  padding: 30px 30px;
+  border-radius: 20px;
+  background-color: white;
+ }
