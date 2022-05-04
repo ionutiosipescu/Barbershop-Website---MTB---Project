@@ -176,43 +176,8 @@ transition: margin 0.15s;
   background-color: #FFFCF2;
 }
 
- /* Colors */
-.bg-dark {
-  --bs-bg-opacity: 0.5;
-}
-.c-yellow {
-  color: #ffc107;
-}
-.bg-light-new {
-background-color: #FFFCF2;
-}
-.bg-light-new-c {
-color: #FFFCF2;
-}
-.bg-dark-new {
-  background-color: #252422;
-}
-.bg-grey-new {
-background-color: #CCC5B9;
-}
-.bg-grey-new-c {
-color: #CCC5B9;
-}
-.bg-darkgrey-new {
-background-color: #403D39;
-}
-
-.bg-accent-new {
-color: #EB5E28;
-}
-.bg-yellow-new {
-  color: #FED35B;
-}
-.bg-blue-new {
-  color:  #467082;
-}
-
 /* Cards */
+
 .card-avatar {
   max-width: 130px;
   max-height: 130px;
@@ -249,6 +214,42 @@ color: #EB5E28;
 
 a {
   text-decoration: none;
+}
+
+ /* Colors */
+.bg-dark {
+  --bs-bg-opacity: 0.5;
+}
+.c-yellow {
+  color: #ffc107;
+}
+.bg-light-new {
+background-color: #FFFCF2;
+}
+.bg-light-new-c {
+color: #FFFCF2;
+}
+.bg-dark-new {
+  background-color: #252422;
+}
+.bg-grey-new {
+background-color: #CCC5B9;
+}
+.bg-grey-new-c {
+color: #CCC5B9;
+}
+.bg-darkgrey-new {
+background-color: #403D39;
+}
+
+.bg-accent-new {
+color: #EB5E28;
+}
+.bg-yellow-new {
+  color: #FED35B;
+}
+.bg-blue-new {
+  color:  #467082;
 }
 
 /* Form */
